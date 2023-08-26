@@ -271,7 +271,7 @@ module.exports = async function (input, options = {}) {
                     let thinkingEmbed = {
                         title: `${translations.question} ${aki.currentStep + 1}`,
                         color: options.embedColor,
-                        description: `**${translations.progress}: ${Math.round(aki.progress)}%\n${await translate(aki.question, options.language)}}**`
+                        description: `**${translations.progress}: ${Math.round(aki.progress)}%\n${await translate(aki.question, options.language)}**`,
                         author: { name: usertag, icon_url: avatar },
                         footer: { text: translations.thinking }
                     }
